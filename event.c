@@ -1,4 +1,5 @@
-#include "game.h"
+#include "event.h"
+#include "player.h"
 
 event_queue_item_t event_queue[13];
 

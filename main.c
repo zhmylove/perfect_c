@@ -1,4 +1,4 @@
-#include "game.h"
+#include "event.h"
 
 int main(int argc, char *argv[]) {   
    event_next();
