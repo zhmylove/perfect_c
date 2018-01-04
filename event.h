@@ -1,6 +1,10 @@
 #ifndef EVENT_H
 #define EVENT_H
 
+#include "player_name.h"
+
+enum player_name;
+
 typedef enum event {
    EV_NONE,
    EV_EAT,  // make player eat smth from his stuff
@@ -8,8 +12,8 @@ typedef enum event {
 } event_t;
 
 typedef struct event_queue_item {
-   player_name_t from;
-   player_name_t to;
+   enum player_name from;
+   enum player_name to;
    event_t event;
 } event_queue_item_t;
 
